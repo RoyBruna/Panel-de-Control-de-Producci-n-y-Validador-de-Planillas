@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node src/server.js"
   },
+  "engines": {
+    "node": ">=22.5.0"
+  },
   "keywords": [
     "excel",
     "produccion",
