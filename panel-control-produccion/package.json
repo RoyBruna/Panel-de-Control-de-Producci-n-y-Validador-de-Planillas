@@ -1,0 +1,25 @@
+{
+  "name": "panel-control-produccion",
+  "version": "1.0.0",
+  "description": "Sistema de ingesta de planillas Excel de producción, persistencia en SQLite, panel de control gerencial y exportación de reportes.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "excel",
+    "produccion",
+    "dashboard",
+    "sqlite",
+    "express",
+    "sheetjs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  }
+}
+
