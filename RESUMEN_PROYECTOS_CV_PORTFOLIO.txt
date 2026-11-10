@@ -1,0 +1,110 @@
+================================================================================
+RESUMEN EJECUTIVO PARA CV Y PORTFOLIO: AUTOMATIZACIÓN Y PROCESAMIENTO DE DATOS
+================================================================================
+
+Este documento contiene los resúmenes profesionales, impacto de negocio, stack
+tecnológico y viñetas listas para copiar y pegar en tu Currículum Vitae,
+LinkedIn o perfil de GitHub / Portfolio web.
+
+--------------------------------------------------------------------------------
+1. PROYECTO: PANEL DE CONTROL DE PRODUCCIÓN
+--------------------------------------------------------------------------------
+
+• PITCH EN UNA LÍNEA:
+Sistema web full stack para la ingesta de planillas Excel de producción, auditoría
+de calidad en tiempo real, persistencia relacional en SQLite y visualización
+gerencial con KPIs y exportación de reportes ejecutivos.
+
+• STACK TECNOLÓGICO:
+- Backend: Node.js, Express.js
+- Base de Datos: SQLite (arquitectura relacional normalizada, WAL mode, índices)
+- Motor de Hojas de Cálculo: SheetJS (xlsx)
+- Frontend: Vanilla HTML5, CSS3 formal/corporativo (Slate/Navy), JavaScript ES6+
+- Visualización: Chart.js (evolución de producción vs. defectos y cuotas de turno)
+
+• QUÉ PROBLEMA RESUELVE (VALOR PARA RRHH Y OPERACIONES):
+- Automatiza la recepción y consolidación diaria de partes de producción que
+  habitualmente se realiza mediante carga manual propensa a errores.
+- Valida la integridad operativa antes de persistir: rechaza de forma automática
+  filas con fechas inválidas, cantidades negativas, campos vacíos o inconsistencias
+  (por ejemplo, piezas defectuosas superiores al total producido), informando
+  en pantalla el número de fila y el motivo exacto del descarte.
+- Genera reportes listos para gerencia en un solo clic (.xlsx consolidado con
+  hojas de "Resumen" y "Detalle"), acelerando el análisis de scrap y productividad.
+
+• CARACTERÍSTICAS TÉCNICAS DESTACADAS:
+- Normalización automática de encabezados (ignora mayúsculas, espacios y tildes).
+- Inserción transaccional por lotes (garantía de consistencia ACID).
+- 4 KPIs de control: Volumen total producido, Tasa de scrap (% descarte con
+  alerta semafórica), Distribución por turno y Top 3 productos fabricados.
+- Filtros dinámicos por rango de fechas (Desde/Hasta) y por línea de producción.
+- Exportador a Excel multi-hoja con anchos de columna adaptativos.
+
+• TEXTO LISTO PARA TU CV (SECCIÓN PROYECTOS):
+Panel de Control de Producción | Node.js, Express, SQLite, SheetJS, Chart.js
+- Desarrollé una solución integral para ingesta, sanitización y análisis de datos
+  de producción fabril a partir de planillas Excel (.xlsx/.xls).
+- Diseñé la base de datos relacional en SQLite implementando transacciones por
+  lotes e índices para optimizar consultas agregadas y métricas en tiempo real.
+- Construí un dashboard gerencial con indicadores clave de rendimiento (scrap %,
+  volumen por turno, líderes de línea), filtros temporales y exportador de
+  reportes consolidados multi-hoja en formato Excel.
+
+
+--------------------------------------------------------------------------------
+2. PROYECTO: CONSOLIDADOR Y VALIDADOR DE PLANILLAS
+--------------------------------------------------------------------------------
+
+• PITCH EN UNA LÍNEA:
+Herramienta CLI en Python para la consolidación desatendida de múltiples planillas
+Excel departamentales, con auditoría por reglas declarativas y reporte ejecutivo.
+
+• STACK TECNOLÓGICO:
+- Lenguaje: Python 3.10+
+- Motor de Datos: Pandas (vectorización, limpieza y agrupaciones)
+- Motor Excel & Formato: OpenPyXL (paleta corporativa, autofiltros y dimensiones)
+- Configuración: PyYAML (reglas de negocio desacopladas)
+- Interfaz: CLI nativo con Argparse
+
+• QUÉ PROBLEMA RESUELVE (VALOR PARA RRHH Y OPERACIONES):
+- Resuelve la clásica tarea administrativa de recibir múltiples planillas de horas
+  y turnos de distintos sectores (Administración, Logística, Planta) y unificarlas
+  a mano, lo que suele demorar horas y generar errores de tipeo.
+- Reduce el tiempo de procesamiento de horas a solo 2 segundos de ejecución.
+- Detecta automáticamente duplicados por clave compuesta (legajo + fecha) que
+  ocurren entre planillas de diferentes áreas (ej. empleados fichados dos veces).
+
+• CARACTERÍSTICAS TÉCNICAS DESTACADAS:
+- Arquitectura desacoplada vía config/reglas.yaml: permite ajustar topes de
+  horas máximas, turnos homologados o campos obligatorios sin tocar el código.
+- Detección de duplicados intra e inter-planillas con trazabilidad de origen.
+- Generación de libro Excel profesional con 3 hojas estructuradas:
+  * "Resumen": KPIs de auditoría (registros procesados, tasa de error %),
+    horas normales y extras por sector, y top 5 incidencias detectadas.
+  * "Consolidado": Base de datos limpia con encabezado Navy corporativo,
+    formato numérico decimal y autofiltros activados.
+  * "Errores": Padrón de filas rechazadas con celdas resaltadas y columnas
+    iniciales de trazabilidad (archivo de origen, fila y motivo de rechazo).
+
+• TEXTO LISTO PARA TU CV (SECCIÓN PROYECTOS):
+Consolidador y Validador de Planillas | Python, Pandas, OpenPyXL, PyYAML, CLI
+- Creé una herramienta por línea de comandos para automatizar la consolidación y
+  auditoría de planillas de control horario de múltiples sectores operativos.
+- Implementé un motor de validación declarativa con YAML capaz de detectar
+  duplicados cruzados por legajo/fecha, valores fuera de rango y turnos no válidos.
+- Diseñé la exportación automatizada con openpyxl, generando libros Excel con
+  estilo corporativo, autofiltros y hojas independientes de resumen y errores.
+
+
+--------------------------------------------------------------------------------
+RESUMEN PARA DEFENDER EN ENTREVISTAS (ELEVATOR PITCH)
+--------------------------------------------------------------------------------
+"Desarrollé dos proyectos complementarios orientados a resolver los principales
+cuellos de botella del trabajo con planillas en empresas:
+1) Con Node.js y SQLite resolví la carga operativa continua, integrando una
+   interfaz web con validación estricta para evitar datos corruptos y un dashboard
+   que transforma planillas en métricas de toma de decisión en segundos.
+2) Con Python y Pandas resolví la consolidación masiva por lotes, aplicando
+   reglas de negocio declarativas y exportando libros Excel profesionales de
+   nivel auditoría con trazabilidad total de errores."
+================================================================================

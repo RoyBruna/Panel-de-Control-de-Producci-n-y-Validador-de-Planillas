@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Local runtime data / caches
+*.log
+panel-control-produccion/data/produccion.db*
+.DS_Store
+Thumbs.db
+

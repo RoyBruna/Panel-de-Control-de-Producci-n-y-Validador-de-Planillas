@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: panel-control-produccion
+    env: node
+    rootDir: panel-control-produccion
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
