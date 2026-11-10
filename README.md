@@ -2,6 +2,8 @@
 
 > **Sistema web para ingesta de planillas Excel de producción con dashboard de KPIs y exportación de reportes.**
 
+[![Demo en Vivo](https://img.shields.io/badge/Demo_en_Vivo-Render-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://panel-de-control-de-producci-n-y.onrender.com/)
+
 [![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js&logoColor=white)](https://nodejs.org)
 [![Express](https://img.shields.io/badge/Express-4.21-000000?logo=express&logoColor=white)](https://expressjs.com)
 [![SQLite](https://img.shields.io/badge/SQLite-WAL_Mode-003B57?logo=sqlite&logoColor=white)](https://sqlite.org)
@@ -75,14 +77,11 @@ No necesitás inventar datos. El repositorio incluye archivos reales de ejemplo:
 
 ---
 
-## Deploy en la Nube (Render Gratis)
+## Acceso a la Aplicación en Vivo
 
-El Panel de Control de Producción incluye la configuración [`render.yaml`](./render.yaml) para desplegarse de forma gratuita en Render:
-
-1. Creá una cuenta gratuita en [Render.com](https://render.com).
-2. Conectá este repositorio de GitHub como un **Web Service**.
-3. Render detectará automáticamente `render.yaml` (o seleccioná: `Root Directory: panel-control-produccion`, `Build: npm install`, `Start: npm start`).
-4. En 2 minutos tendrás tu URL viva (ej: `https://panel-control-produccion.onrender.com`).
+La aplicación web se encuentra desplegada y operativa en Render:
+- 🌐 **Demo en vivo:** [https://panel-de-control-de-producci-n-y.onrender.com/](https://panel-de-control-de-producci-n-y.onrender.com/)
+- Podés probar cargar las planillas de prueba ([`muestra.xlsx`](./panel-control-produccion/data/muestra.xlsx) y [`muestra_con_errores.xlsx`](./panel-control-produccion/data/muestra_con_errores.xlsx)) directamente en la versión online.
 
 ---
 

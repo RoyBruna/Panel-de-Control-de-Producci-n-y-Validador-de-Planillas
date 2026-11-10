@@ -2,6 +2,10 @@
 
 Sistema web para la ingesta, validación automatizada y análisis operativo de planillas de producción industrial con persistencia en base de datos relacional y exportación ejecutiva.
 
+[![Demo en Vivo](https://img.shields.io/badge/Demo_en_Vivo-Render-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://panel-de-control-de-producci-n-y.onrender.com/)
+
+> **URL de producción:** [https://panel-de-control-de-producci-n-y.onrender.com/](https://panel-de-control-de-producci-n-y.onrender.com/)
+
 ![Vista del Dashboard](screenshots/dashboard.png)
 
 ## Stack Tecnológico
